@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- ================= css file ================== -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ================= remixicon link cdn ================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ================= MAIN ================== -->
+    <section class="calcul">
+        <input type="text" placeholder="0">
+        <div class="buttons">
+            <div class="column_btn">
+                <button id="reset" onclick="Clear()">C</button>
+                <button id="delete" onclick="Delete()">DEL</button>
+                <button onclick="AppendToInput('%')">%</button>
+                <button onclick="AppendToInput('*')"><i class="ri-close-fill"></i></button>
+            </div>
+            <div class="column_btn">
+                <button onclick="AppendToInput('7')">7</button>
+                <button onclick="AppendToInput('8')">8</button>
+                <button onclick="AppendToInput('9')">9</button>
+                <button onclick="AppendToInput('/')"><i class="ri-divide-line"></i></button>
+            </div>
+            <div class="column_btn">
+                <button onclick="AppendToInput('4')">4</button>
+                <button onclick="AppendToInput('5')">5</button>
+                <button onclick="AppendToInput('6')">6</button>
+                <button onclick="AppendToInput('-')"><i class="ri-subtract-fill"></i></button>
+            </div>
+            <div class="column_btn">
+                <button onclick="AppendToInput('1')">1</button>
+                <button onclick="AppendToInput('2')">2</button>
+                <button onclick="AppendToInput('3')">3</button>
+                <button onclick="AppendToInput('+')">+</button>
+            </div>
+            <div class="column_btn">
+                <button onclick="AppendToInput('0')">0</button>
+                <button onclick="AppendToInput('.')">,</button>
+                <button id="equal-btn" onclick="getTotal()">=</button>
+            </div>
+        </div>
+    </section>
+    <!-- ================= js file ================== -->
+    <script src="main.js"></script>
+</body>
+</html>

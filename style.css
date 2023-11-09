@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    background-color: #e6e8ea;
+}
+/* ==================== MAIN ================ */
+.calcul{
+    height: 80%;
+    width: 33%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1REM;
+    border-radius: 15px;
+}
+input{
+    pointer-events: none;
+    height: 20%;
+    text-align: end;
+    padding-right: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    color: #bbbdbf;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.buttons{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.column_btn{
+    flex-grow: 1;
+    display: flex;
+}
+button{
+    width: 25%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: #e6e8ea;
+    border: none;
+    margin: 4px;
+    border-radius: 15px;
+}
+#equal-btn{
+    width: 50%;
+    background-color: #6773f7;
+    color: #fff;
+}
+#reset{
+    background-color: #f62100;
+    color: #fff;
+}
+#delete{
+    font-size: 1.2REM;
+}
+/* ==================== Breakpoint ================ */
+/* --- xsmall device --- */
+@media screen and ( width <=  576px) {
+    body{
+        background-color: #fff;
+        padding-top: 50%;
+    }
+    .calcul{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+/* --- small && meduim device --- */
+@media screen and ( 577px <= width <= 991px) {
+    .calcul{
+        height: 80%;
+        width: 60%;
+    }
+}
